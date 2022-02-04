@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "cfe9552d-0a97-4564-b70f-1183fb1a2573",
+		"name": "NODEJS CRM Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all contacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/contact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get contact by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/contact/61fc295246039d79eeefa013",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"contact",
+						"61fc295246039d79eeefa013"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert new contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "Asaf",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Nave",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "asaf@me.com",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "aw",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "222333444",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/contact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update contact by Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "Asaf",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Nave",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "asafne@me.com",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "aw",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/contact/61fc295246039d79eeefa013",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"contact",
+						"61fc295246039d79eeefa013"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update contact by Id Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/contact/61fd392c530fc323c581588f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"contact",
+						"61fd392c530fc323c581588f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
